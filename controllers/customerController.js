@@ -41,7 +41,7 @@ export const getCustomerByID = async(req, res) => {
     try {
         const customer = await Customer.findById(req.body.customerid)
         if (!customer) {
-            res.status(404).json({msg: "User not found"})
+            res.status(404).json({msg: "Customer not found"})
         } else {
             res.status(200).json(customer)
         }
