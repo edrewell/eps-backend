@@ -69,11 +69,16 @@ export const createCustomer = async(req, res) => {
 
 export const updateCustomer = async(req, res) => {
     try {
-        const customer = await Customer.findById(req.body.id)
+        console.log(req.body)
+        const customer = await Customer.findById(req.body.customerid)
+        console.log(customer)
         if (!customer) {
             res.status(400).json({msg:"Customer not found"})
         } else {
-            await Customer.findByIdAndUpdate()
+            delete req.body.id
+            console.log(req.body)
+            const updatedCustomer = await Customer.findByIdAndUpdate(customer.id, req.body)
+            console.log(updatedCustomer)
         }
     } catch (error) {
         console.log(error)

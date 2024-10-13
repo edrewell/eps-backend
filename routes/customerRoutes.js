@@ -17,6 +17,6 @@ router.route("/getbyfilter").get(protect, getCustomersByFilter);
 
 /** POST */
 router.route("/create").post(protect, createCustomer);
-router.route("/uodate").post(protect, updateCustomer);
+router.route("/update").post(protect, updateCustomer);
 
 export default router;
