@@ -1,17 +1,17 @@
-var l1 = [2, 3, 4]
-var l2 = [5, 6, 7]
+import Invoice from "./models/invoiceModel.js";
+import {readFile} from "node:fs/promises"
+import connection from './config/db.js';
 
-l1.reverse()
-l2.reverse()
+connection("mongodb://localhost:27017/eps-admin");
 
-console.log(l1, l2)
+const invocies = await readFile('./invoices2.json', {encoding:"utf-8"})
 
-var n1 = l1.join('')
-var n2 = l2.join('')
-console.log(n1, n2)
+const invoicesJson = JSON.parse(invocies)
 
-var total = Number(n1) + Number(n2)
-console.log(total)
 
-var totalToArray = Array.from(String(total), Number)
-console.log(totalToArray.reverse())
+for (const inv in invoicesJson) {
+    await Invoice.create(invoicesJson[inv])
+    
+}
+
+process.exit(1)

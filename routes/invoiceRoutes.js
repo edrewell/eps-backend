@@ -2,7 +2,7 @@ import express from "express";
 
 import protect from "../middleware/protect.js";
 
-import { createInvoice, getInvoice } from "../controllers/invoiceController.js";
+import { createInvoice, getInvoice, getInvoicesByCustomerID } from "../controllers/invoiceController.js";
 
 const router = express.Router()
 
@@ -10,6 +10,7 @@ const router = express.Router()
 router.route('/create').post(protect, createInvoice)
 
 // GET
-router.route('/get').get(protect, getInvoice)
+router.route('/getbyid').get(protect, getInvoice)
+router.route('/getbycustomer').get(protect, getInvoicesByCustomerID)
 
 export default router

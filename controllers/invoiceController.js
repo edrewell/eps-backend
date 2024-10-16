@@ -49,7 +49,7 @@ export const createInvoice = async (req, res) => {
 // Delete Invoice
 
 
-// Get Invoice
+// Get Invoice by ID
 
 export const getInvoice = async (req, res,) => {
     try {
@@ -62,5 +62,23 @@ export const getInvoice = async (req, res,) => {
     } catch (error) {
         res.status(400).json({msg: "Could not retrieve invoice"})
         console.log(error)
+    }
+}
+
+// GET Invoice numbers by customer
+
+export const getInvoicesByCustomerID = async (req, res) => {
+    try {
+        const customer = await Customer.findById(req.body.customerid);
+
+        if(!customer) {
+            res.status(404).json({msg:"Customer does not exist"})
+        } else {
+            const invoices = await Invoice.find({customerID:[customer._id]}).select('')
+            res.status(200).json({invoices})
+        }
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({msg: "Could not return invoices"})
     }
 }
