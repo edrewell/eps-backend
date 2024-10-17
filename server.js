@@ -1,9 +1,12 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import connection from './config/db.js';
+
 import userRoutes from './routes/userRoutes.js'
 import customerRoutes from './routes/customerRoutes.js'
 import invoiceRoutes from './routes/invoiceRoutes.js'
+import paymentRoutes from './routes/paymentRoutes.js'
+
 import cookieParser from 'cookie-parser';
 
 dotenv.config()
@@ -19,6 +22,7 @@ app.use(cookieParser())
 app.use('/api/user', userRoutes)
 app.use('/api/customer', customerRoutes)
 app.use('/api/invoice', invoiceRoutes)
+app.use('/api/payment', paymentRoutes)
 
 
 app.get('/', (req, res) => {

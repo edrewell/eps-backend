@@ -1,23 +1,24 @@
 import mongoose from "mongoose";
 
-const {Schema} = mongoose;
+const { Schema, model } = mongoose;
 
-const paymentSchema = new Schema({
-    invoiceID : {
-        type: Schema.ObjectId,
+const paymentSchema = new Schema(
+  {
+    invoiceID: {
+      type: Schema.ObjectId,
     },
-    amount : {
-        type: Number,
-        required: true
+    amount: {
+      type: Number,
+      required: true,
     },
     dateReceived: {
-        type: Date,
-        required: true 
-    }
-})
+      type: Date,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
 
+const Payment = model("Payment", paymentSchema);
 
-
-const Payment = mongoose.Schema("Payment", paymentSchema)
-
-export default Payments
+export default Payment;
