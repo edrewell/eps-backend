@@ -4,9 +4,8 @@ const { Schema, model } = mongoose;
 
 const paymentSchema = new Schema(
   {
-    invoiceID: {
-      type: Schema.ObjectId,
-    },
+    invoiceIDs: [{ type: Schema.ObjectId }],
+    customerID: {type: Schema.ObjectId},
     amount: {
       type: Number,
       required: true,

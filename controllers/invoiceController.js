@@ -53,7 +53,7 @@ export const createInvoice = async (req, res) => {
 
 export const getInvoice = async (req, res,) => {
     try {
-        const invoice = await Invoice.findById(req.body.invoiceID)
+        const invoice = await Invoice.findById(req.params.customerid)
         if(!invoice) {
             res.status(404).json({msg: "Invoice no available"})
         } else {

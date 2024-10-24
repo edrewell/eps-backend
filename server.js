@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import connection from './config/db.js';
+import cors from 'cors'
 
 import userRoutes from './routes/userRoutes.js'
 import customerRoutes from './routes/customerRoutes.js'
@@ -18,6 +19,11 @@ connection("mongodb://localhost:27017/eps-admin");
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cookieParser())
+
+app.use(cors({
+    origin: 'http://localhost:3000',  // Your frontend URL
+    credentials: true,  // Allow credentials (cookies)
+  }));
 
 app.use('/api/user', userRoutes)
 app.use('/api/customer', customerRoutes)

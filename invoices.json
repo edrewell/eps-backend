@@ -1,0 +1,132 @@
+[
+  {
+    "dueDate": "2024-11-01",
+    "issuedDate": "2024-10-01",
+    "invoiceNumber": 1001,
+    "customerID": "670a578cae713218bc1896ad",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Cement bags (50kg each)", "quantity": 30, "value": 10, "total": 300, "date": "2024-10-01" },
+      { "invoiceItemDescription": "Steel rebar (10mm, 12m length)", "quantity": 50, "value": 8, "total": 400, "date": "2024-10-01" }
+    ],
+    "invoiceNotes": "Urgent delivery requested.",
+    "discount": 20,
+    "total": 680
+  },
+  {
+    "dueDate": "2024-11-03",
+    "issuedDate": "2024-10-03",
+    "invoiceNumber": 1002,
+    "customerID": "670a578cae713218bc1896b7",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Bricks (standard size)", "quantity": 500, "value": 0.5, "total": 250, "date": "2024-10-03" },
+      { "invoiceItemDescription": "Gravel (ton)", "quantity": 10, "value": 25, "total": 250, "date": "2024-10-03" }
+    ],
+    "invoiceNotes": "Scheduled for next week.",
+    "discount": 0,
+    "total": 500
+  },
+  {
+    "dueDate": "2024-11-05",
+    "issuedDate": "2024-10-05",
+    "invoiceNumber": 1003,
+    "customerID": "670a578cae713218bc1896bb",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Wood planks (2x4, 10ft)", "quantity": 100, "value": 3, "total": 300, "date": "2024-10-05" },
+      { "invoiceItemDescription": "Plywood sheets (4x8, 0.5 inch)", "quantity": 20, "value": 15, "total": 300, "date": "2024-10-05" }
+    ],
+    "invoiceNotes": "No special instructions.",
+    "discount": 50,
+    "total": 550
+  },
+  {
+    "dueDate": "2024-11-07",
+    "issuedDate": "2024-10-07",
+    "invoiceNumber": 1004,
+    "customerID": "670a578cae713218bc1896ad",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Concrete mixer rental (per day)", "quantity": 2, "value": 150, "total": 300, "date": "2024-10-07" },
+      { "invoiceItemDescription": "Wheelbarrows", "quantity": 5, "value": 50, "total": 250, "date": "2024-10-07" }
+    ],
+    "invoiceNotes": "Needed for weekend project.",
+    "discount": 0,
+    "total": 550
+  },
+  {
+    "dueDate": "2024-11-09",
+    "issuedDate": "2024-10-09",
+    "invoiceNumber": 1005,
+    "customerID": "670a578cae713218bc1896b7",
+    "invoiceItems": [
+      { "invoiceItemDescription": "PVC pipes (3 inch diameter)", "quantity": 100, "value": 2, "total": 200, "date": "2024-10-09" },
+      { "invoiceItemDescription": "Pipe fittings (various)", "quantity": 50, "value": 1, "total": 50, "date": "2024-10-09" }
+    ],
+    "invoiceNotes": "Additional supplies expected.",
+    "discount": 0,
+    "total": 250
+  },
+  {
+    "dueDate": "2024-11-11",
+    "issuedDate": "2024-10-11",
+    "invoiceNumber": 1006,
+    "customerID": "670a578cae713218bc1896bb",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Electrical wiring (500m roll)", "quantity": 2, "value": 120, "total": 240, "date": "2024-10-11" },
+      { "invoiceItemDescription": "Light fixtures", "quantity": 10, "value": 25, "total": 250, "date": "2024-10-11" }
+    ],
+    "invoiceNotes": "Install before winter.",
+    "discount": 0,
+    "total": 490
+  },
+  {
+    "dueDate": "2024-11-13",
+    "issuedDate": "2024-10-13",
+    "invoiceNumber": 1007,
+    "customerID": "670a578cae713218bc1896ad",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Insulation (fiberglass, roll)", "quantity": 20, "value": 30, "total": 600, "date": "2024-10-13" },
+      { "invoiceItemDescription": "Drywall sheets (4x8)", "quantity": 30, "value": 12, "total": 360, "date": "2024-10-13" }
+    ],
+    "invoiceNotes": "Project completion in 2 weeks.",
+    "discount": 0,
+    "total": 960
+  },
+  {
+    "dueDate": "2024-11-15",
+    "issuedDate": "2024-10-15",
+    "invoiceNumber": 1008,
+    "customerID": "670a578cae713218bc1896b7",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Roofing shingles (bundle)", "quantity": 15, "value": 25, "total": 375, "date": "2024-10-15" },
+      { "invoiceItemDescription": "Roofing nails (box)", "quantity": 10, "value": 15, "total": 150, "date": "2024-10-15" }
+    ],
+    "invoiceNotes": "Clear weather needed for roof work.",
+    "discount": 0,
+    "total": 525
+  },
+  {
+    "dueDate": "2024-11-17",
+    "issuedDate": "2024-10-17",
+    "invoiceNumber": 1009,
+    "customerID": "670a578cae713218bc1896bb",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Doors (solid wood)", "quantity": 5, "value": 200, "total": 1000, "date": "2024-10-17" },
+      { "invoiceItemDescription": "Hinges (pack of 10)", "quantity": 10, "value": 15, "total": 150, "date": "2024-10-17" }
+    ],
+    "invoiceNotes": "Installation in 3 days.",
+    "discount": 0,
+    "total": 1150
+  },
+  {
+    "dueDate": "2024-11-19",
+    "issuedDate": "2024-10-19",
+    "invoiceNumber": 1010,
+    "customerID": "670a578cae713218bc1896ad",
+    "invoiceItems": [
+      { "invoiceItemDescription": "Windows (double-pane)", "quantity": 8, "value": 150, "total": 1200, "date": "2024-10-19" },
+      { "invoiceItemDescription": "Window frames", "quantity": 8, "value": 50, "total": 400, "date": "2024-10-19" }
+    ],
+    "invoiceNotes": "Scheduled for early winter.",
+    "discount": 0,
+    "total": 1600
+  }
+]

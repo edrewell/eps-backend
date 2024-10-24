@@ -10,7 +10,7 @@ const router = express.Router()
 router.route('/create').post(protect, createInvoice)
 
 // GET
-router.route('/getbyid').get(protect, getInvoice)
+router.route('/getbyid/:customerid').get(protect, getInvoice)
 router.route('/getbycustomer').get(protect, getInvoicesByCustomerID)
 
 export default router
